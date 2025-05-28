@@ -61,6 +61,7 @@ public class TutorialService {
 			 _tutorial.setTitle(tutorialDto.getTitle());
 			 _tutorial.setDescription(tutorialDto.getDescription());
 			 _tutorial.setPublished(tutorialDto.isPublished());
+			 repository.save(_tutorial);
 			 
 			TutorialDTO dto = new TutorialDTO(
 					_tutorial.getTitle(),
